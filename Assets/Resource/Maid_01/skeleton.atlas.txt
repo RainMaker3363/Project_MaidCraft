@@ -1,0 +1,195 @@
+
+skeleton.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+examples/export/maid spine/maid01_0000s_0000_wepon_03
+  rotate: false
+  xy: 475, 187
+  size: 16, 19
+  orig: 16, 19
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0000s_0001_wepon_02
+  rotate: false
+  xy: 322, 22
+  size: 24, 23
+  orig: 24, 23
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0000s_0002_wepon_01
+  rotate: true
+  xy: 334, 438
+  size: 72, 384
+  orig: 72, 384
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0000_hairpin
+  rotate: false
+  xy: 505, 259
+  size: 164, 177
+  orig: 164, 177
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0001_hair08
+  rotate: true
+  xy: 373, 2
+  size: 54, 81
+  orig: 54, 81
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0002_hair_02
+  rotate: true
+  xy: 278, 47
+  size: 131, 93
+  orig: 131, 93
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0003_hair_03
+  rotate: false
+  xy: 720, 389
+  size: 192, 121
+  orig: 192, 121
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0004_hair_04
+  rotate: false
+  xy: 671, 245
+  size: 190, 142
+  orig: 190, 142
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0005_hair_01
+  rotate: false
+  xy: 290, 11
+  size: 30, 34
+  orig: 30, 34
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0006_eye_04
+  rotate: false
+  xy: 100, 9
+  size: 86, 34
+  orig: 86, 34
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0007_eye_03
+  rotate: false
+  xy: 373, 118
+  size: 95, 63
+  orig: 95, 63
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0008_eye_02
+  rotate: false
+  xy: 2, 2
+  size: 96, 41
+  orig: 96, 41
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0009_eye_01
+  rotate: false
+  xy: 373, 58
+  size: 92, 58
+  orig: 92, 58
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0010_head
+  rotate: false
+  xy: 334, 246
+  size: 169, 190
+  orig: 169, 190
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0011_hair_05
+  rotate: false
+  xy: 475, 208
+  size: 25, 36
+  orig: 25, 36
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0012_hair_06
+  rotate: true
+  xy: 334, 183
+  size: 61, 139
+  orig: 61, 139
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0001s_0013_hair_07
+  rotate: true
+  xy: 2, 45
+  size: 133, 274
+  orig: 133, 274
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0002s_0000_arm_rr_03
+  rotate: false
+  xy: 456, 2
+  size: 35, 54
+  orig: 35, 54
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0002s_0001_arm_r_03
+  rotate: true
+  xy: 601, 206
+  size: 51, 57
+  orig: 51, 57
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0003s_0000_neck_03
+  rotate: false
+  xy: 863, 232
+  size: 46, 46
+  orig: 46, 46
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0003s_0001_neck_02
+  rotate: false
+  xy: 671, 400
+  size: 47, 36
+  orig: 47, 36
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0003s_0002_body_02
+  rotate: false
+  xy: 914, 399
+  size: 108, 111
+  orig: 108, 111
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0004s_0000_arm_ll_03
+  rotate: true
+  xy: 242, 4
+  size: 39, 46
+  orig: 39, 46
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0004s_0001_arm_l_03
+  rotate: false
+  xy: 188, 5
+  size: 52, 38
+  orig: 52, 38
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0005s_0000_leg_r_03
+  rotate: false
+  xy: 863, 280
+  size: 45, 107
+  orig: 45, 107
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/maid01_0006s_0000_leg_l_03
+  rotate: true
+  xy: 505, 215
+  size: 42, 94
+  orig: 42, 94
+  offset: 0, 0
+  index: -1
+examples/export/maid spine/shadow
+  rotate: false
+  xy: 2, 180
+  size: 330, 330
+  orig: 330, 330
+  offset: 0, 0
+  index: -1
