@@ -18,6 +18,13 @@ namespace GameOption
         Hard = 2,
         MAX
     }
+
+    public enum InGameTurn
+    {
+        Player = 0,
+        Enemy,
+        MAX
+    }
 }
 
 public class GameManager : Singleton<GameManager>
