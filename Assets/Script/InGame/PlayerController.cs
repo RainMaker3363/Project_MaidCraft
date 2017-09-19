@@ -172,6 +172,11 @@ public class PlayerController : MonoBehaviour {
                     {
                         PlayerAni.AnimationName = Spine_Ani_idleName;
                     }
+
+                    if(Input.GetKeyDown(KeyCode.Space))
+                    {
+                        AutoFade.LoadLevel("BattleScene", 0.2f, 0.2f, Color.black);
+                    }
                 }
                 break;
 
