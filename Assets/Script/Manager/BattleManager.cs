@@ -7,15 +7,15 @@ public class BattleManager : MonoBehaviour {
     public GameObject Player_Field;
     public GameObject Enemy_Field;
 
-    private GameOption.InGameTurn NowGameTurn;
+    //private GameOption.InGameTurn NowGameTurn;
 
 	// Use this for initialization
 	void Awake () {
 
         if(GameManager.GetInstance != null)
         {
-            GameManager.GetInstance.Initilize_Battle();
-            NowGameTurn = GameManager.GetInstance.GetNowGameTurn();
+            //GameManager.GetInstance.Initilize_Battle();
+            //NowGameTurn = GameManager.GetInstance.GetNowGameTurn();
         }
         
         if(Player_Field == null)
@@ -32,21 +32,21 @@ public class BattleManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        NowGameTurn = GameManager.GetInstance.GetNowGameTurn();
+        //NowGameTurn = GameManager.GetInstance.GetNowGameTurn();
 
-        switch (NowGameTurn)
-        {
-            case GameOption.InGameTurn.Player:
-                {
+        //switch (NowGameTurn)
+        //{
+        //    case GameOption.InGameTurn.Player:
+        //        {
 
-                }
-                break;
+        //        }
+        //        break;
 
-            case GameOption.InGameTurn.Enemy:
-                {
+        //    case GameOption.InGameTurn.Enemy:
+        //        {
 
-                }
-                break;
-        }
+        //        }
+        //        break;
+        //}
 	}
 }

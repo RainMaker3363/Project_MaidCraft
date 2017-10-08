@@ -18,13 +18,6 @@ namespace GameOption
         Hard = 2,
         MAX
     }
-
-    public enum InGameTurn
-    {
-        Player = 0,
-        Enemy,
-        MAX
-    }
 }
 
 public class GameManager : Singleton<GameManager>
@@ -32,22 +25,22 @@ public class GameManager : Singleton<GameManager>
     private GameOption.GameControllOption ControllOption;
     private GameOption.GameDifficultOption DifficultOption;
 
-    private GameOption.InGameTurn NowGameTurnState;
+    //private GameOption.InGameTurn NowGameTurnState;
 
     #region Battle Instance
 
-    // 플레이어의 턴을 관리한다.
-    public int PlayerTurnCount
-    {
-        get
-        {
-            return PlayerTurnCount;
-        }
-        set
-        {
-            PlayerTurnCount = value;
-        }
-    }
+    //// 플레이어의 턴을 관리한다.
+    //public int PlayerTurnCount
+    //{
+    //    get
+    //    {
+    //        return PlayerTurnCount;
+    //    }
+    //    set
+    //    {
+    //        PlayerTurnCount = value;
+    //    }
+    //}
     
     // 플레이어 캐릭터의 수를 관리한다.
     public int PlayerCount
@@ -91,26 +84,26 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
-    // 배틀 시작후 초기화를 시켜준다.
-    public void Initilize_Battle()
-    {
-        int FairChecker = Random.Range(0, 2);
+    //// 배틀 시작후 초기화를 시켜준다.
+    //public void Initilize_Battle()
+    //{
+    //    int FairChecker = Random.Range(0, 2);
 
-        if (FairChecker == 0)
-        {
-            NowGameTurnState = GameOption.InGameTurn.Player;
-        }
-        else
-        {
-            NowGameTurnState = GameOption.InGameTurn.Enemy;
-        }
-    }
+    //    if (FairChecker == 0)
+    //    {
+    //        NowGameTurnState = GameOption.InGameTurn.Player;
+    //    }
+    //    else
+    //    {
+    //        NowGameTurnState = GameOption.InGameTurn.Enemy;
+    //    }
+    //}
 
-    // 현재 누구의 턴인지 알려준다.
-    public GameOption.InGameTurn GetNowGameTurn()
-    {
-        return NowGameTurnState;
-    }
+    //// 현재 누구의 턴인지 알려준다.
+    //public GameOption.InGameTurn GetNowGameTurn()
+    //{
+    //    return NowGameTurnState;
+    //}
 
     #endregion
 
@@ -119,7 +112,7 @@ public class GameManager : Singleton<GameManager>
         ControllOption = GameOption.GameControllOption.KEYBOARD;
         DifficultOption = GameOption.GameDifficultOption.Normal;
 
-        NowGameTurnState = GameOption.InGameTurn.Player;
+        //NowGameTurnState = GameOption.InGameTurn.Player;
     }
 
 

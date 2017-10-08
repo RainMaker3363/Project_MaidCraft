@@ -79,6 +79,7 @@ public class PlayerController : MonoBehaviour {
 
         switch(NowControllOption)
         {
+            // 키보드 입력시 처리될 입력들..
             case GameOption.GameControllOption.KEYBOARD:
                 {
                     if(Input.GetKey(KeyCode.LeftArrow))
@@ -180,8 +181,75 @@ public class PlayerController : MonoBehaviour {
                 }
                 break;
 
+                // 게임패드 사용시 적용될 옵션
+                // Xbox360 패드를 기준으로 설정 되어 있다.
             case GameOption.GameControllOption.GAMEPAD:
                 {
+                    if (Input.GetButtonDown("P1_360_AButton"))
+                    {
+                        Debug.Log("A Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_BButton"))
+                    {
+                        Debug.Log("B Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_XButton"))
+                    {
+                        Debug.Log("X Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_YButton"))
+                    {
+                        Debug.Log("Y Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_LeftBumper"))
+                    {
+                        Debug.Log("Left Bumper!");
+                    }
+                    if (Input.GetButtonDown("P1_360_RightBumper"))
+                    {
+                        Debug.Log("Right Bumper!");
+                    }
+                    if (Input.GetButtonDown("P1_360_BackButton"))
+                    {
+                        Debug.Log("Back Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_StartButton"))
+                    {
+                        Debug.Log("Start Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_LeftThumbStickButton"))
+                    {
+                        Debug.Log("Left Thumbstick Button!");
+                    }
+                    if (Input.GetButtonDown("P1_360_RightThumbStickButton"))
+                    {
+                        Debug.Log("Right Thumbstick Button!");
+                    }
+
+                    if (Input.GetAxis("P1_360_Triggers") > 0.001)
+                    {
+                        Debug.Log("Right Trigger!");
+                    }
+                    if (Input.GetAxis("P1_360_Triggers") < 0)
+                    {
+                        Debug.Log("Left Trigger!");
+                    }
+                    if (Input.GetAxis("P1_360_HorizontalDPAD") > 0.001)
+                    {
+                        Debug.Log("Right D-PAD Button!");
+                    }
+                    if (Input.GetAxis("P1_360_HorizontalDPAD") < 0)
+                    {
+                        Debug.Log("Left D-PAD Button!");
+                    }
+                    if (Input.GetAxis("P1_360_VerticalDPAD") > 0.001)
+                    {
+                        Debug.Log("Up D-PAD Button!");
+                    }
+                    if (Input.GetAxis("P1_360_VerticalDPAD") < 0)
+                    {
+                        Debug.Log("Down D-PAD Button!");
+                    }
 
                 }
                 break;
