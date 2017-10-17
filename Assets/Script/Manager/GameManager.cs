@@ -18,12 +18,20 @@ namespace GameOption
         Hard = 2,
         MAX
     }
+
+    public enum Field_Event
+    {
+        None = 0,
+        Text_Event,
+        Camera_Event,
+    }
 }
 
 public class GameManager : Singleton<GameManager>
 {
     private GameOption.GameControllOption ControllOption;
     private GameOption.GameDifficultOption DifficultOption;
+    private GameOption.Field_Event Field_event;
 
     //private GameOption.InGameTurn NowGameTurnState;
 
@@ -111,6 +119,7 @@ public class GameManager : Singleton<GameManager>
     {
         ControllOption = GameOption.GameControllOption.KEYBOARD;
         DifficultOption = GameOption.GameDifficultOption.Normal;
+        Field_event = GameOption.Field_Event.None;
 
         //NowGameTurnState = GameOption.InGameTurn.Player;
     }
@@ -129,5 +138,15 @@ public class GameManager : Singleton<GameManager>
         return DifficultOption;
     }
 
+    // 현재 필드에서 일어나는 이벤트를 감지한다.
+    public GameOption.Field_Event GetNowFieldGameEvent()
+    {
+        return Field_event;
+    }
+
+    public void SetNowFieldGameEvent(GameOption.Field_Event Event)
+    {
+        Field_event = Event;
+    }
 
 }
