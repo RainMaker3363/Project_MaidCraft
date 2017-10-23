@@ -35,6 +35,11 @@ public class GameManager : Singleton<GameManager>
 
     //private GameOption.InGameTurn NowGameTurnState;
 
+    // 텍스트 넘김 여부 타이머
+    private float TextSkipTimer = 1.0f;
+    // 텍스트 출력 타이머
+    private float TextPrintTimer = 0.03f;
+
     #region Battle Instance
 
     //// 플레이어의 턴을 관리한다.
@@ -49,7 +54,7 @@ public class GameManager : Singleton<GameManager>
     //        PlayerTurnCount = value;
     //    }
     //}
-    
+
     // 플레이어 캐릭터의 수를 관리한다.
     public int PlayerCount
     {
@@ -147,6 +152,28 @@ public class GameManager : Singleton<GameManager>
     public void SetNowFieldGameEvent(GameOption.Field_Event Event)
     {
         Field_event = Event;
+    }
+
+    // 텍스트 출력 타이머 반환
+    public float GetFieldTextPrintTimer()
+    {
+        return TextPrintTimer;
+    }
+
+    public void SetFieldTextPrintTimer(float Timer = 1.0f)
+    {
+        TextPrintTimer = Timer;
+    }
+
+    // 텍스트 스킵 타이머 반환
+    public float GetFieldTextSkipTimer()
+    {
+        return TextSkipTimer;
+    }
+
+    public void SetFieldTextSkipTimer(float Timer = 0.03f)
+    {
+        TextSkipTimer = Timer;
     }
 
 }

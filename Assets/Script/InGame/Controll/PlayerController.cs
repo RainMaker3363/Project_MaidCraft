@@ -185,10 +185,10 @@ public class PlayerController : MonoBehaviour {
                                     PlayerAni.AnimationName = Spine_Ani_idleName;
                                 }
 
-                                if (Input.GetKeyDown(KeyCode.Space))
-                                {
-                                    AutoFade.LoadLevel("BattleScene", 0.2f, 0.2f, Color.black);
-                                }
+                                //if (Input.GetKeyDown(KeyCode.Space))
+                                //{
+                                //    AutoFade.LoadLevel("BattleScene", 0.2f, 0.2f, Color.black);
+                                //}
                             }
                             break;
 
@@ -288,102 +288,99 @@ public class PlayerController : MonoBehaviour {
                         // 키보드 입력시 처리될 입력들..
                         case GameOption.GameControllOption.KEYBOARD:
                             {
-                                if (Input.GetKey(KeyCode.LeftArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
-                                    PlayerAni.skeleton.flipX = true;
+                                PlayerAni.AnimationName = Spine_Ani_idleName;
 
-                                    if (Input.GetKey(KeyCode.UpArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.DownArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, 0.0f));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, 0.0f));
-                                    }
+                                //if (Input.GetKey(KeyCode.LeftArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    PlayerAni.skeleton.flipX = true;
 
-                                }
-                                else if (Input.GetKey(KeyCode.RightArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
-                                    PlayerAni.skeleton.flipX = false;
+                                //    if (Input.GetKey(KeyCode.UpArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.DownArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, 0.0f));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, 0.0f));
+                                //    }
 
-                                    if (Input.GetKey(KeyCode.UpArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.DownArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, 0.0f));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, 0.0f));
-                                    }
+                                //}
+                                //else if (Input.GetKey(KeyCode.RightArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    PlayerAni.skeleton.flipX = false;
 
-                                }
-                                else if (Input.GetKey(KeyCode.UpArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    if (Input.GetKey(KeyCode.UpArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.DownArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, 0.0f));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, 0.0f));
+                                //    }
 
-                                    if (Input.GetKey(KeyCode.LeftArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.RightArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(0.0f, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, MySpeed));
-                                    }
+                                //}
+                                //else if (Input.GetKey(KeyCode.UpArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+
+                                //    if (Input.GetKey(KeyCode.LeftArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.RightArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(0.0f, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, MySpeed));
+                                //    }
 
 
-                                }
-                                else if (Input.GetKey(KeyCode.DownArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //}
+                                //else if (Input.GetKey(KeyCode.DownArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
 
-                                    if (Input.GetKey(KeyCode.LeftArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.RightArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(0.0f, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, -MySpeed));
-                                    }
+                                //    if (Input.GetKey(KeyCode.LeftArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.RightArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(0.0f, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, -MySpeed));
+                                //    }
 
-                                }
-                                else
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_idleName;
-                                }
-
-                                if (Input.GetKeyDown(KeyCode.Space))
-                                {
-                                    AutoFade.LoadLevel("BattleScene", 0.2f, 0.2f, Color.black);
-                                }
+                                //}
+                                //else
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_idleName;
+                                //}
                             }
                             break;
 
@@ -395,71 +392,73 @@ public class PlayerController : MonoBehaviour {
                         // Xbox360 패드를 기준으로 설정 되어 있다.
                         case GameOption.GameControllOption.GAMEPAD:
                             {
-                                if (Input.GetButtonDown("P1_360_AButton"))
-                                {
-                                    Debug.Log("A Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_BButton"))
-                                {
-                                    Debug.Log("B Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_XButton"))
-                                {
-                                    Debug.Log("X Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_YButton"))
-                                {
-                                    Debug.Log("Y Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_LeftBumper"))
-                                {
-                                    Debug.Log("Left Bumper!");
-                                }
-                                if (Input.GetButtonDown("P1_360_RightBumper"))
-                                {
-                                    Debug.Log("Right Bumper!");
-                                }
-                                if (Input.GetButtonDown("P1_360_BackButton"))
-                                {
-                                    Debug.Log("Back Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_StartButton"))
-                                {
-                                    Debug.Log("Start Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_LeftThumbStickButton"))
-                                {
-                                    Debug.Log("Left Thumbstick Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_RightThumbStickButton"))
-                                {
-                                    Debug.Log("Right Thumbstick Button!");
-                                }
+                                PlayerAni.AnimationName = Spine_Ani_idleName;
 
-                                if (Input.GetAxis("P1_360_Triggers") > 0.001)
-                                {
-                                    Debug.Log("Right Trigger!");
-                                }
-                                if (Input.GetAxis("P1_360_Triggers") < 0)
-                                {
-                                    Debug.Log("Left Trigger!");
-                                }
-                                if (Input.GetAxis("P1_360_HorizontalDPAD") > 0.001)
-                                {
-                                    Debug.Log("Right D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_HorizontalDPAD") < 0)
-                                {
-                                    Debug.Log("Left D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_VerticalDPAD") > 0.001)
-                                {
-                                    Debug.Log("Up D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_VerticalDPAD") < 0)
-                                {
-                                    Debug.Log("Down D-PAD Button!");
-                                }
+                                //if (Input.GetButtonDown("P1_360_AButton"))
+                                //{
+                                //    Debug.Log("A Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_BButton"))
+                                //{
+                                //    Debug.Log("B Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_XButton"))
+                                //{
+                                //    Debug.Log("X Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_YButton"))
+                                //{
+                                //    Debug.Log("Y Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_LeftBumper"))
+                                //{
+                                //    Debug.Log("Left Bumper!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_RightBumper"))
+                                //{
+                                //    Debug.Log("Right Bumper!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_BackButton"))
+                                //{
+                                //    Debug.Log("Back Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_StartButton"))
+                                //{
+                                //    Debug.Log("Start Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_LeftThumbStickButton"))
+                                //{
+                                //    Debug.Log("Left Thumbstick Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_RightThumbStickButton"))
+                                //{
+                                //    Debug.Log("Right Thumbstick Button!");
+                                //}
+
+                                //if (Input.GetAxis("P1_360_Triggers") > 0.001)
+                                //{
+                                //    Debug.Log("Right Trigger!");
+                                //}
+                                //if (Input.GetAxis("P1_360_Triggers") < 0)
+                                //{
+                                //    Debug.Log("Left Trigger!");
+                                //}
+                                //if (Input.GetAxis("P1_360_HorizontalDPAD") > 0.001)
+                                //{
+                                //    Debug.Log("Right D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_HorizontalDPAD") < 0)
+                                //{
+                                //    Debug.Log("Left D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_VerticalDPAD") > 0.001)
+                                //{
+                                //    Debug.Log("Up D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_VerticalDPAD") < 0)
+                                //{
+                                //    Debug.Log("Down D-PAD Button!");
+                                //}
 
                             }
                             break;
@@ -483,102 +482,99 @@ public class PlayerController : MonoBehaviour {
                         // 키보드 입력시 처리될 입력들..
                         case GameOption.GameControllOption.KEYBOARD:
                             {
-                                if (Input.GetKey(KeyCode.LeftArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
-                                    PlayerAni.skeleton.flipX = true;
+                                PlayerAni.AnimationName = Spine_Ani_idleName;
 
-                                    if (Input.GetKey(KeyCode.UpArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.DownArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, 0.0f));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, 0.0f));
-                                    }
+                                //if (Input.GetKey(KeyCode.LeftArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    PlayerAni.skeleton.flipX = true;
 
-                                }
-                                else if (Input.GetKey(KeyCode.RightArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
-                                    PlayerAni.skeleton.flipX = false;
+                                //    if (Input.GetKey(KeyCode.UpArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.DownArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, 0.0f));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, 0.0f));
+                                //    }
 
-                                    if (Input.GetKey(KeyCode.UpArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.DownArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, 0.0f));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, 0.0f));
-                                    }
+                                //}
+                                //else if (Input.GetKey(KeyCode.RightArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    PlayerAni.skeleton.flipX = false;
 
-                                }
-                                else if (Input.GetKey(KeyCode.UpArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //    if (Input.GetKey(KeyCode.UpArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.DownArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, 0.0f));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, 0.0f));
+                                //    }
 
-                                    if (Input.GetKey(KeyCode.LeftArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.RightArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(0.0f, MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, MySpeed));
-                                    }
+                                //}
+                                //else if (Input.GetKey(KeyCode.UpArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
+
+                                //    if (Input.GetKey(KeyCode.LeftArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.RightArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(0.0f, MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, MySpeed));
+                                //    }
 
 
-                                }
-                                else if (Input.GetKey(KeyCode.DownArrow))
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_runName;
+                                //}
+                                //else if (Input.GetKey(KeyCode.DownArrow))
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_runName;
 
-                                    if (Input.GetKey(KeyCode.LeftArrow))
-                                    {
-                                        transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
-                                    }
-                                    else if (Input.GetKey(KeyCode.RightArrow))
-                                    {
-                                        transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
-                                    }
-                                    else
-                                    {
-                                        transform.Translate(new Vector2(0.0f, -MySpeed));
-                                        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, -MySpeed));
-                                    }
+                                //    if (Input.GetKey(KeyCode.LeftArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(-MySpeed, -MySpeed));
+                                //    }
+                                //    else if (Input.GetKey(KeyCode.RightArrow))
+                                //    {
+                                //        transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(MySpeed, -MySpeed));
+                                //    }
+                                //    else
+                                //    {
+                                //        transform.Translate(new Vector2(0.0f, -MySpeed));
+                                //        MainField_Character_Camera.transform.Translate(new Vector2(0.0f, -MySpeed));
+                                //    }
 
-                                }
-                                else
-                                {
-                                    PlayerAni.AnimationName = Spine_Ani_idleName;
-                                }
-
-                                if (Input.GetKeyDown(KeyCode.Space))
-                                {
-                                    AutoFade.LoadLevel("BattleScene", 0.2f, 0.2f, Color.black);
-                                }
+                                //}
+                                //else
+                                //{
+                                //    PlayerAni.AnimationName = Spine_Ani_idleName;
+                                //}
                             }
                             break;
 
@@ -590,71 +586,73 @@ public class PlayerController : MonoBehaviour {
                         // Xbox360 패드를 기준으로 설정 되어 있다.
                         case GameOption.GameControllOption.GAMEPAD:
                             {
-                                if (Input.GetButtonDown("P1_360_AButton"))
-                                {
-                                    Debug.Log("A Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_BButton"))
-                                {
-                                    Debug.Log("B Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_XButton"))
-                                {
-                                    Debug.Log("X Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_YButton"))
-                                {
-                                    Debug.Log("Y Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_LeftBumper"))
-                                {
-                                    Debug.Log("Left Bumper!");
-                                }
-                                if (Input.GetButtonDown("P1_360_RightBumper"))
-                                {
-                                    Debug.Log("Right Bumper!");
-                                }
-                                if (Input.GetButtonDown("P1_360_BackButton"))
-                                {
-                                    Debug.Log("Back Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_StartButton"))
-                                {
-                                    Debug.Log("Start Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_LeftThumbStickButton"))
-                                {
-                                    Debug.Log("Left Thumbstick Button!");
-                                }
-                                if (Input.GetButtonDown("P1_360_RightThumbStickButton"))
-                                {
-                                    Debug.Log("Right Thumbstick Button!");
-                                }
+                                PlayerAni.AnimationName = Spine_Ani_idleName;
 
-                                if (Input.GetAxis("P1_360_Triggers") > 0.001)
-                                {
-                                    Debug.Log("Right Trigger!");
-                                }
-                                if (Input.GetAxis("P1_360_Triggers") < 0)
-                                {
-                                    Debug.Log("Left Trigger!");
-                                }
-                                if (Input.GetAxis("P1_360_HorizontalDPAD") > 0.001)
-                                {
-                                    Debug.Log("Right D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_HorizontalDPAD") < 0)
-                                {
-                                    Debug.Log("Left D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_VerticalDPAD") > 0.001)
-                                {
-                                    Debug.Log("Up D-PAD Button!");
-                                }
-                                if (Input.GetAxis("P1_360_VerticalDPAD") < 0)
-                                {
-                                    Debug.Log("Down D-PAD Button!");
-                                }
+                                //if (Input.GetButtonDown("P1_360_AButton"))
+                                //{
+                                //    Debug.Log("A Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_BButton"))
+                                //{
+                                //    Debug.Log("B Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_XButton"))
+                                //{
+                                //    Debug.Log("X Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_YButton"))
+                                //{
+                                //    Debug.Log("Y Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_LeftBumper"))
+                                //{
+                                //    Debug.Log("Left Bumper!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_RightBumper"))
+                                //{
+                                //    Debug.Log("Right Bumper!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_BackButton"))
+                                //{
+                                //    Debug.Log("Back Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_StartButton"))
+                                //{
+                                //    Debug.Log("Start Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_LeftThumbStickButton"))
+                                //{
+                                //    Debug.Log("Left Thumbstick Button!");
+                                //}
+                                //if (Input.GetButtonDown("P1_360_RightThumbStickButton"))
+                                //{
+                                //    Debug.Log("Right Thumbstick Button!");
+                                //}
+
+                                //if (Input.GetAxis("P1_360_Triggers") > 0.001)
+                                //{
+                                //    Debug.Log("Right Trigger!");
+                                //}
+                                //if (Input.GetAxis("P1_360_Triggers") < 0)
+                                //{
+                                //    Debug.Log("Left Trigger!");
+                                //}
+                                //if (Input.GetAxis("P1_360_HorizontalDPAD") > 0.001)
+                                //{
+                                //    Debug.Log("Right D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_HorizontalDPAD") < 0)
+                                //{
+                                //    Debug.Log("Left D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_VerticalDPAD") > 0.001)
+                                //{
+                                //    Debug.Log("Up D-PAD Button!");
+                                //}
+                                //if (Input.GetAxis("P1_360_VerticalDPAD") < 0)
+                                //{
+                                //    Debug.Log("Down D-PAD Button!");
+                                //}
 
                             }
                             break;
